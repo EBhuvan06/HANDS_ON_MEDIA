@@ -1,0 +1,12 @@
+ ______________________________________________________________
+| # | Gesture     | Hand Position              | Hand Required |
+|---|-------------|----------------------------|---------------|
+| 1 | PLAY        | Index & middle fingers up  | Either        |
+| 2 | PAUSE       | Open palm                  | Either        |
+| 3 | VOLUME_UP   | Index finger up            | Either        |
+| 4 | VOLUME_DOWN | Index finger down          | Either        |
+| 5 | SKIP_RIGHT  | Thumb up + index,middle -> | LEFT hand     |
+| 6 | SKIP_LEFT   | Thumb up + index,middle <- | RIGHT hand    |
+| 7 | NEXT        | Thumb up + index -->       | LEFT hand     |
+| 8 | PREVIOUS    | Thumb up + index <--       | RIGHT hand    | 
+|--------------------------------------------------------------|

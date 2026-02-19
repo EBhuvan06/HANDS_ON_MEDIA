@@ -1,0 +1,37 @@
+# Hand Gesture MPV Control - Requirements
+# Tested on NVIDIA Jetson Nano (JetPack 4.6, Ubuntu 18.04)
+# Python 3.6+
+
+# ==================== CORE DEPENDENCIES ====================
+
+# Computer Vision
+opencv-python>=4.5.0
+
+# Hand Detection
+mediapipe>=0.8.9
+
+# Deep Learning - TFLite Inference
+# NOTE for Jetson Nano: Install TensorFlow from NVIDIA wheel, not pip
+# See docs/SETUP_GUIDE.md for Jetson-specific TF installation
+tensorflow>=2.5.0
+
+# Numerical Computing
+numpy>=1.19.0
+
+# ==================== JETSON NANO NOTES ====================
+# Do NOT install tensorflow from pip on Jetson Nano
+# Instead use NVIDIA's pre-built wheel:
+#
+# wget https://developer.download.nvidia.com/compute/redist/jp/v46/tensorflow/tensorflow-2.5.0+nv21.8-cp36-cp36m-linux_aarch64.whl
+# pip3 install tensorflow-2.5.0+nv21.8-cp36-cp36m-linux_aarch64.whl
+#
+# OpenCV and MediaPipe may also need special installation
+# See docs/SETUP_GUIDE.md for full instructions
+
+# ==================== STANDARD LIBRARY (no install needed) ====================
+# socket      - MPV IPC communication (built-in)
+# json        - Command serialization (built-in)
+# time        - Performance timing (built-in)
+# os          - File system checks (built-in)
+# collections - deque for buffers (built-in)
+
